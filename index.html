@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- ==================================================================== -->
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- ==================================================================== -->
+
+        <title>Inmobiliaria - tizify.</title>
+        <meta name="description" content="Descripción de la página. Menos de 150 caracteres." />
+        <meta name="keywords" content="Palabras, Clave, de, la, página." />
+        <meta name="robots" content="index,follow" />
+
+        <!-- ===========================[Preconnects]============================ -->
+
+        <!-- ==================================================================== -->
+
+        <link rel="stylesheet" href="/web/app.css" media="all" />
+
+        <!-- =============================[Preloads]============================= -->
+
+        <!-- ==================================================================== -->
+
+        <script src="/web/app.js" defer></script>
+        <script src="https://kit.fontawesome.com/1e193e3a23.js" crossorigin="anonymous" defer></script>
+
+        <!-- ==================================================================== -->
+
+        <meta name="author" content="Nombre del Creador de la Página." />
+        <meta name="apple-mobile-web-app-title" content="Page Name" />
+        <meta name="application-name" content="Page Name" />
+        <meta name="theme-color" content="" />
+
+        <!-- ==================================================================== -->
+
+        <!-- <link rel="shortcut icon" href="/build/assets/images/favicon.png" type="image/x-icon" /> -->
+        <!-- <link rel="apple-touch-icon" href="/build/assets/images/favicon.png" /> -->
+        <!-- <link rel="manifest" href="/build/manifest.webmanifest" /> -->
+
+        <!-- ==================================================================== -->
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.website.com/" />
+        <meta property="og:title" content="Title — Subtitle" />
+        <meta property="og:description" content="Descripción de la página. Menos de 150 caracteres." />
+        <meta property="og:image" content="https://www.website.com/media/MetaImage.png" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.website.com/" />
+        <meta property="twitter:title" content="Title — Subtitle" />
+        <meta property="twitter:description" content="Descripción de la página. Menos de 150 caracteres." />
+        <meta property="twitter:image" content="https://www.website.com/media/MetaImage.png" />
+
+        <!-- ==================================================================== -->
+    </head>
+    <body>
+        <header>
+            <div class="header__wrapper">
+                <h2>Inmobiliaria</h2>
+                <div id="header__links">
+                    <ul>
+                        <li><a class="active" href="">Home</a></li>
+                        <li><a href="">Venta</a></li>
+                        <li><a href="">Alquiler</a></li>
+                        <li><a href="">Proyectos</a></li>
+                        <li><a href="">Contacto</a></li>
+                    </ul>
+                    <a class="login" href="">Log In</a>
+                </div>
+                <div id="menuBtn">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </header>
+        <section class="landing">
+            <!-- <img src="/media/img/background.jpg" alt="" /> -->
+            <div class="content">
+                <h1>Encuentra el hogar de tus sueños.</h1>
+                <p>Explora una amplia gama de opciones inmobiliarias en las mejores ubicaciones.</p>
+            </div>
+        </section>
+
+        <div class="search__bar">
+            <div class="search__type">
+                <button class="selected" id="ventaType" onclick="searchType(1)">Venta</button>
+                <button id="alquilerType" onclick="searchType(2)">Alquiler</button>
+            </div>
+            <div class="search__box">
+                <div class="input">
+                    <i class="fa-solid fa-list-ol icon"></i>
+                    <select name="">
+                        <option value="0" selected disabled>Tipo de Propiedad</option>
+                        <option value="1">Apartamento</option>
+                        <option value="2">Casa</option>
+                    </select>
+                </div>
+
+                <div class="input">
+                    <i class="fa-solid fa-location-dot icon"></i>
+                    <select name="">
+                        <option value="0" selected disabled>Localización</option>
+                        <option value="1">Canelones</option>
+                        <option value="1">Colonia</option>
+                        <option value="1">Maldonado</option>
+                        <option value="1">Montevideo</option>
+                    </select>
+                </div>
+
+                <div class="input">
+                    <i class="fa-solid fa-dollar-sign icon"></i>
+                    <input class="price__input" id="price__input" type="number" min="0" placeholder="Precio Máximo" />
+                </div>
+
+                <button class="search__button"><i class="fa-solid fa-magnifying-glass"></i> Buscar</button>
+            </div>
+        </div>
+
+        <section class="featured">
+            <h2 class="section__title">Propiedades Destacadas</h2>
+            <p class="section__description">Estas son algunas de nuestras propiedades mas visitadas.</p>
+
+            <div class="properties__container">
+                <div class="property">
+                    <div class="property__image">
+                        <img class="property__image" src="/media/img/background.jpg" alt="" />
+                        <p class="property__type">Venta</p>
+                    </div>
+                    <div class="property__information">
+                        <div class="property__header">
+                            <div class="title">
+                                <h3>Rock Palace Apartments</h3>
+                                <p><i class="fa-solid fa-location-dot icon"></i> Maldonado, Punta del Este.</p>
+                            </div>
+                            <div class="price">
+                                <p>Precio de venta</p>
+                                <h3>$295,000</h3>
+                            </div>
+                        </div>
+                        <p class="property__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, et! Ducimus magni odio sint fuga...
+                        </p>
+                        <div class="property__bottom">
+                            <div class="property__characteristics">
+                                <p><i class="fa-solid fa-bed icon"></i>3 Dormitorios</p>
+                                <p><i class="fa-solid fa-kitchen-set icon"></i>1 Cocina</p>
+                                <p><i class="fa-solid fa-bath icon"></i>3 Baños</p>
+                                <p><i class="fa-solid fa-ruler-combined icon"></i>108 mts<sup>2</sup></p>
+                            </div>
+                            <div class="property__button">
+                                <button>Ver Detalles</button>
+                            </div>
+                        </div>
+                        <p class="reference__code">Ref. #40001</p>
+                    </div>
+                </div>
+
+                <div class="property">
+                    <div class="property__image">
+                        <img class="property__image" src="/media/img/Property1.jpg" alt="" />
+                        <p class="property__type">Alquiler</p>
+                    </div>
+                    <div class="property__information">
+                        <div class="property__header">
+                            <div class="title">
+                                <h3>Arabian Night Apartments</h3>
+                                <p><i class="fa-solid fa-location-dot icon"></i> Maldonado, Punta del Este.</p>
+                            </div>
+                            <div class="price">
+                                <p>Precio de alquiler</p>
+                                <h3>$85,440</h3>
+                            </div>
+                        </div>
+                        <p class="property__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, et! Ducimus magni odio sint fuga...
+                        </p>
+                        <div class="property__bottom">
+                            <div class="property__characteristics">
+                                <p><i class="fa-solid fa-bed icon"></i>2 Dormitorios</p>
+                                <p><i class="fa-solid fa-kitchen-set icon"></i>1 Cocina</p>
+                                <p><i class="fa-solid fa-bath icon"></i>2 Baños</p>
+                                <p><i class="fa-solid fa-ruler-combined icon"></i>80 mts<sup>2</sup></p>
+                            </div>
+                            <div class="property__button">
+                                <button>Ver Detalles</button>
+                            </div>
+                        </div>
+                        <p class="reference__code">Ref. #40002</p>
+                    </div>
+                </div>
+
+                <div class="property">
+                    <div class="property__image">
+                        <img class="property__image" src="/media/img/Property1.jpg" alt="" />
+                        <p class="property__type">Venta</p>
+                    </div>
+                    <div class="property__information">
+                        <div class="property__header">
+                            <div class="title">
+                                <h3>Apartamento En More Buceo De 3 Dormitorios!</h3>
+                                <p><i class="fa-solid fa-location-dot icon"></i> Montevideo, Buceo.</p>
+                            </div>
+                            <div class="price">
+                                <p>Precio de venta</p>
+                                <h3>$397,580</h3>
+                            </div>
+                        </div>
+                        <p class="property__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, et! Ducimus magni odio sint fuga...
+                        </p>
+                        <div class="property__bottom">
+                            <div class="property__characteristics">
+                                <p><i class="fa-solid fa-bed icon"></i>3 Dormitorios</p>
+                                <p><i class="fa-solid fa-kitchen-set icon"></i>1 Cocina</p>
+                                <p><i class="fa-solid fa-bath icon"></i>2 Baños</p>
+                                <p><i class="fa-solid fa-ruler-combined icon"></i>150 mts<sup>2</sup></p>
+                            </div>
+                            <div class="property__button">
+                                <button>Ver Detalles</button>
+                            </div>
+                        </div>
+                        <p class="reference__code">Ref. #40003</p>
+                    </div>
+                </div>
+
+                <div class="property">
+                    <div class="property__image">
+                        <img class="property__image" src="/media/img/background.jpg" alt="" />
+                        <p class="property__type">Venta</p>
+                    </div>
+                    <div class="property__information">
+                        <div class="property__header">
+                            <div class="title">
+                                <h3>Rock Palace Apartments</h3>
+                                <p><i class="fa-solid fa-location-dot icon"></i> Maldonado, Punta del Este.</p>
+                            </div>
+                            <div class="price">
+                                <p>Precio de venta</p>
+                                <h3>$295,000</h3>
+                            </div>
+                        </div>
+                        <p class="property__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, et! Ducimus magni odio sint fuga...
+                        </p>
+                        <div class="property__bottom">
+                            <div class="property__characteristics">
+                                <p><i class="fa-solid fa-bed icon"></i>3 Dormitorios</p>
+                                <p><i class="fa-solid fa-kitchen-set icon"></i>1 Cocina</p>
+                                <p><i class="fa-solid fa-bath icon"></i>3 Baños</p>
+                                <p><i class="fa-solid fa-ruler-combined icon"></i>108 mts<sup>2</sup></p>
+                            </div>
+                            <div class="property__button">
+                                <button>Ver Detalles</button>
+                            </div>
+                        </div>
+                        <p class="reference__code">Ref. #40001</p>
+                    </div>
+                </div>
+
+                <div class="property">
+                    <div class="property__image">
+                        <img class="property__image" src="/media/img/Property1.jpg" alt="" />
+                        <p class="property__type">Alquiler</p>
+                    </div>
+                    <div class="property__information">
+                        <div class="property__header">
+                            <div class="title">
+                                <h3>Arabian Night Apartments</h3>
+                                <p><i class="fa-solid fa-location-dot icon"></i> Maldonado, Punta del Este.</p>
+                            </div>
+                            <div class="price">
+                                <p>Precio de alquiler</p>
+                                <h3>$144,000</h3>
+                            </div>
+                        </div>
+                        <p class="property__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, et! Ducimus magni odio sint fuga...
+                        </p>
+                        <div class="property__bottom">
+                            <div class="property__characteristics">
+                                <p><i class="fa-solid fa-bed icon"></i>2 Dormitorios</p>
+                                <p><i class="fa-solid fa-kitchen-set icon"></i>1 Cocina</p>
+                                <p><i class="fa-solid fa-bath icon"></i>2 Baños</p>
+                                <p><i class="fa-solid fa-ruler-combined icon"></i>80 mts<sup>2</sup></p>
+                            </div>
+                            <div class="property__button">
+                                <button>Ver Detalles</button>
+                            </div>
+                        </div>
+                        <p class="reference__code">Ref. #40002</p>
+                    </div>
+                </div>
+
+                <div class="property">
+                    <div class="property__image">
+                        <img class="property__image" src="/media/img/Property1.jpg" alt="" />
+                        <p class="property__type">Venta</p>
+                    </div>
+                    <div class="property__information">
+                        <div class="property__header">
+                            <div class="title">
+                                <h3>Apartamento En More Buceo De 3 Dormitorios!</h3>
+                                <p><i class="fa-solid fa-location-dot icon"></i> Montevideo, Buceo.</p>
+                            </div>
+                            <div class="price">
+                                <p>Precio de venta</p>
+                                <h3>$397,580</h3>
+                            </div>
+                        </div>
+                        <p class="property__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, et! Ducimus magni odio sint fuga...
+                        </p>
+                        <div class="property__bottom">
+                            <div class="property__characteristics">
+                                <p><i class="fa-solid fa-bed icon"></i>3 Dormitorios</p>
+                                <p><i class="fa-solid fa-kitchen-set icon"></i>1 Cocina</p>
+                                <p><i class="fa-solid fa-bath icon"></i>2 Baños</p>
+                                <p><i class="fa-solid fa-ruler-combined icon"></i>150 mts<sup>2</sup></p>
+                            </div>
+                            <div class="property__button">
+                                <button>Ver Detalles</button>
+                            </div>
+                        </div>
+                        <p class="reference__code">Ref. #40003</p>
+                    </div>
+                </div>
+            </div>
+            <button class="morebtn">Ver Mas <i class="fa-solid fa-arrow-right-long"></i></button>
+        </section>
+        <section class="clients">
+            <h2 class="section__title">Reseñas de Clientes</h2>
+            <p class="section__description">Porque su opinión también importa a la hora de comprar.</p>
+
+            <div class="reviews__container">
+                <div class="review">
+                    <div class="user"><i class="fa-solid fa-user"></i></div>
+                    <h3>Lorem, ipsum.</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic nemo delectus ut repudiandae debitis unde
+                        saepe commodi nam aut sit.
+                    </p>
+                </div>
+
+                <div class="review">
+                    <div class="user"><i class="fa-solid fa-user"></i></div>
+                    <h3>Lorem, ipsum.</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic nemo delectus ut repudiandae debitis unde
+                        saepe commodi nam aut sit.
+                    </p>
+                </div>
+
+                <div class="review">
+                    <div class="user"><i class="fa-solid fa-user"></i></div>
+                    <h3>Lorem, ipsum.</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic nemo delectus ut repudiandae debitis unde
+                        saepe commodi nam aut sit.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="ready">
+            <h2 class="title">¿Listo para realizar tu proxima compra?</h2>
+            <h3>Empieza la busqueda de tu propiedad con nosotros.</h3>
+            <a class="contactBtn" href="tel:+59898234717"><i class="fa-solid fa-phone"></i> Contáctanos</a>
+        </section>
+    </body>
+</html>
