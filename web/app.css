@@ -506,7 +506,7 @@ header {
 
 .ready {
     width: 100%;
-    padding: 80px 40px;
+    padding: 120px 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -540,6 +540,108 @@ header {
 
         &:hover {
             background-color: var(--secondary-color);
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: #fff;
+
+    .footer__wrapper {
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 30px 20px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+
+        .col {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .footer__logo {
+                color: var(--main-color);
+                font-size: 30px;
+                margin: 0;
+            }
+            & h3 {
+                color: var(--secondary-color);
+                margin-bottom: 10px;
+            }
+            & h4 {
+                color: var(--secondary-color);
+                margin: 10px 0;
+                font-size: 15px;
+            }
+            & p {
+                color: #666;
+                font-size: 14px;
+                margin: 3px 0;
+                text-align: center;
+
+                & b {
+                    color: var(--secondary-color);
+                    font-weight: 600;
+                }
+
+                & a {
+                    color: var(--main-color);
+                    text-decoration: none;
+                }
+            }
+
+            .social {
+                width: 130px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                & i {
+                    color: var(--main-color);
+                    font-size: 28px;
+                }
+            }
+
+            .footer__links {
+                & p {
+                    font-size: 16px;
+                    margin: 10px 0;
+                    text-align: left;
+                    & a {
+                        color: var(--secondary-color);
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .tizify {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+
+        background-color: var(--white-color);
+        width: 100%;
+
+        & p {
+            font-weight: 700;
+            color: var(--secondary-color);
+            font-size: 20px;
+        }
+        & a {
+            height: 25px;
+            & img {
+                height: 100%;
+                margin: 0 5px;
+            }
         }
     }
 }
@@ -667,5 +769,9 @@ header {
                 font-size: 16px;
             }
         }
+    }
+
+    footer .footer__wrapper {
+        grid-template-columns: 1fr;
     }
 }
