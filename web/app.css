@@ -111,7 +111,7 @@ header {
 
     position: relative;
 
-    background: linear-gradient(to right, #333333aa, #00000066), url("/media/img/background.jpg");
+    background: linear-gradient(to right, #333333aa, #00000066), url("/RealState/media/img/background.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 40px;
