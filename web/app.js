@@ -17,3 +17,13 @@ const searchType = (btn) => {
         document.getElementById("alquilerType").classList.toggle("selected");
     }
 };
+
+const currencyType = (btn) => {
+    if (
+        (btn == 1 && !document.getElementById("currencyUSD").classList.contains("active")) ||
+        (btn == 2 && !document.getElementById("currencyUYU").classList.contains("active"))
+    ) {
+        document.getElementById("currencyUSD").classList.toggle("active");
+        document.getElementById("currencyUYU").classList.toggle("active");
+    }
+};

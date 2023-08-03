@@ -117,7 +117,7 @@ header {
 
     position: relative;
 
-    background: linear-gradient(to right, #333333aa, #00000066), url("/RealState/media/img/background.jpg");
+    background: linear-gradient(to right, #333333aa, #00000066), url("/media/img/background.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 40px;
@@ -210,6 +210,42 @@ header {
                 box-shadow: 0 7px 10px 0 #00000022;
                 border: 1px solid #eee;
                 background-color: #fff;
+            }
+            .price__input::-webkit-outer-spin-button,
+            .price__input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+            .price__input {
+                -moz-appearance: textfield;
+                padding-right: 80px;
+            }
+            .currency {
+                position: absolute;
+                right: 10px;
+                top: 0;
+
+                height: 100%;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                & button {
+                    background: transparent;
+                    border: none;
+                    font-weight: bold;
+                    color: var(--secondary-color);
+                    display: flex;
+                    justify-content: center;
+                    font-size: 14px;
+                    margin-left: 5px;
+                    cursor: pointer;
+
+                    &.active {
+                        color: var(--main-color);
+                    }
+                }
             }
         }
 
@@ -511,7 +547,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(to right, #23254abc, #23254add), url("/RealState/media/img/background2.jpg");
+    background: linear-gradient(to right, #23254abc, #23254add), url("/media/img/background2.jpg");
     background-position: bottom;
 
     & h2 {
