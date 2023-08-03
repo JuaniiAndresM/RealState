@@ -18,13 +18,13 @@
 
         <!-- ==================================================================== -->
 
-        <link rel="stylesheet" href="/web/app.css" media="all" />
+        <link rel="stylesheet" href="/RealState/web/app.css" media="all" />
 
         <!-- =============================[Preloads]============================= -->
 
         <!-- ==================================================================== -->
 
-        <script src="/web/app.js" defer></script>
+        <script src="/RealState/web/app.js" defer></script>
         <script src="https://kit.fontawesome.com/1e193e3a23.js" crossorigin="anonymous" defer></script>
 
         <!-- ==================================================================== -->
@@ -46,13 +46,13 @@
         <meta property="og:url" content="https://www.website.com/" />
         <meta property="og:title" content="Title — Subtitle" />
         <meta property="og:description" content="Descripción de la página. Menos de 150 caracteres." />
-        <meta property="og:image" content="https://www.website.com/media/MetaImage.png" />
+        <meta property="og:image" content="https://www.website.com/RealState/media/MetaImage.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://www.website.com/" />
         <meta property="twitter:title" content="Title — Subtitle" />
         <meta property="twitter:description" content="Descripción de la página. Menos de 150 caracteres." />
-        <meta property="twitter:image" content="https://www.website.com/media/MetaImage.png" />
+        <meta property="twitter:image" content="https://www.website.com/RealState/media/MetaImage.png" />
 
         <!-- ==================================================================== -->
     </head>
@@ -62,8 +62,8 @@
                 <h2>Inmobiliaria</h2>
                 <div id="header__links">
                     <ul>
-                        <li><a class="active" href="">Home</a></li>
-                        <li><a href="">Venta</a></li>
+                        <li><a class="active" href="#">Home</a></li>
+                        <li><a href="/RealState/modules/venta.html">Venta</a></li>
                         <li><a href="">Alquiler</a></li>
                         <li><a href="">Proyectos</a></li>
                         <li><a href="">Contacto</a></li>
@@ -78,7 +78,7 @@
             </div>
         </header>
         <section class="landing">
-            <!-- <img src="/media/img/background.jpg" alt="" /> -->
+            <!-- <img src="/RealState/media/img/background.jpg" alt="" /> -->
             <div class="content">
                 <h1>Encuentra el hogar de tus sueños.</h1>
                 <p>Explora una amplia gama de opciones inmobiliarias ubicadas en las mejores Localizaciones.</p>
@@ -132,7 +132,7 @@
             <div class="properties__container">
                 <div class="property">
                     <div class="property__image">
-                        <img class="property__image" src="/media/img/background.jpg" alt="" />
+                        <img class="property__image" src="/RealState/media/img/background.jpg" alt="" />
                         <p class="property__type">Venta</p>
                     </div>
                     <div class="property__information">
@@ -166,7 +166,7 @@
 
                 <div class="property">
                     <div class="property__image">
-                        <img class="property__image" src="/media/img/Property1.jpg" alt="" />
+                        <img class="property__image" src="/RealState/media/img/Property1.jpg" alt="" />
                         <p class="property__type">Alquiler</p>
                     </div>
                     <div class="property__information">
@@ -200,7 +200,7 @@
 
                 <div class="property">
                     <div class="property__image">
-                        <img class="property__image" src="/media/img/Property1.jpg" alt="" />
+                        <img class="property__image" src="/RealState/media/img/Property1.jpg" alt="" />
                         <p class="property__type">Venta</p>
                     </div>
                     <div class="property__information">
@@ -234,7 +234,7 @@
 
                 <div class="property">
                     <div class="property__image">
-                        <img class="property__image" src="/media/img/background.jpg" alt="" />
+                        <img class="property__image" src="/RealState/media/img/background.jpg" alt="" />
                         <p class="property__type">Venta</p>
                     </div>
                     <div class="property__information">
@@ -268,7 +268,7 @@
 
                 <div class="property">
                     <div class="property__image">
-                        <img class="property__image" src="/media/img/Property1.jpg" alt="" />
+                        <img class="property__image" src="/RealState/media/img/Property1.jpg" alt="" />
                         <p class="property__type">Alquiler</p>
                     </div>
                     <div class="property__information">
@@ -302,7 +302,7 @@
 
                 <div class="property">
                     <div class="property__image">
-                        <img class="property__image" src="/media/img/Property1.jpg" alt="" />
+                        <img class="property__image" src="/RealState/media/img/Property1.jpg" alt="" />
                         <p class="property__type">Venta</p>
                     </div>
                     <div class="property__information">
@@ -343,7 +343,10 @@
             <div class="reviews__container">
                 <div class="review">
                     <div class="user"><i class="fa-solid fa-user"></i></div>
-                    <h3>Lorem, ipsum.</h3>
+                    <div class="card__header">
+                        <h3>Lorem, ipsum.</h3>
+                        <p><i class="fa-solid fa-star icon"></i> 4.5 / 5</p>
+                    </div>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic nemo delectus ut repudiandae debitis unde
                         saepe commodi nam aut sit.
@@ -352,7 +355,10 @@
 
                 <div class="review">
                     <div class="user"><i class="fa-solid fa-user"></i></div>
-                    <h3>Lorem, ipsum.</h3>
+                    <div class="card__header">
+                        <h3>Lorem, ipsum.</h3>
+                        <p><i class="fa-solid fa-star icon"></i> 4 / 5</p>
+                    </div>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic nemo delectus ut repudiandae debitis unde
                         saepe commodi nam aut sit.
@@ -361,7 +367,10 @@
 
                 <div class="review">
                     <div class="user"><i class="fa-solid fa-user"></i></div>
-                    <h3>Lorem, ipsum.</h3>
+                    <div class="card__header">
+                        <h3>Lorem, ipsum.</h3>
+                        <p><i class="fa-solid fa-star icon"></i> 3 / 5</p>
+                    </div>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic nemo delectus ut repudiandae debitis unde
                         saepe commodi nam aut sit.
@@ -419,7 +428,7 @@
             </div>
             <div class="tizify">
                 <p>By</p>
-                <a href=""><img src="/media/img/tizify.svg" alt="" /></a>
+                <a href=""><img src="/RealState/media/img/tizify.svg" alt="" /></a>
             </div>
         </footer>
     </body>

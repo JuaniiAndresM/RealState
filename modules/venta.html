@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- ==================================================================== -->
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- ==================================================================== -->
+
+        <title>Inmobiliaria - tizify.</title>
+        <meta name="description" content="Descripción de la página. Menos de 150 caracteres." />
+        <meta name="keywords" content="Palabras, Clave, de, la, página." />
+        <meta name="robots" content="index,follow" />
+
+        <!-- ===========================[Preconnects]============================ -->
+
+        <!-- ==================================================================== -->
+
+        <link rel="stylesheet" href="/RealState/web/app.css" media="all" />
+
+        <!-- =============================[Preloads]============================= -->
+
+        <!-- ==================================================================== -->
+
+        <script src="/RealState/web/app.js" defer></script>
+        <script src="https://kit.fontawesome.com/1e193e3a23.js" crossorigin="anonymous" defer></script>
+
+        <!-- ==================================================================== -->
+
+        <meta name="author" content="Nombre del Creador de la Página." />
+        <meta name="apple-mobile-web-app-title" content="Page Name" />
+        <meta name="application-name" content="Page Name" />
+        <meta name="theme-color" content="" />
+
+        <!-- ==================================================================== -->
+
+        <!-- <link rel="shortcut icon" href="/build/assets/images/favicon.png" type="image/x-icon" /> -->
+        <!-- <link rel="apple-touch-icon" href="/build/assets/images/favicon.png" /> -->
+        <!-- <link rel="manifest" href="/build/manifest.webmanifest" /> -->
+
+        <!-- ==================================================================== -->
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.website.com/" />
+        <meta property="og:title" content="Title — Subtitle" />
+        <meta property="og:description" content="Descripción de la página. Menos de 150 caracteres." />
+        <meta property="og:image" content="https://www.website.com/RealState/media/MetaImage.png" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.website.com/" />
+        <meta property="twitter:title" content="Title — Subtitle" />
+        <meta property="twitter:description" content="Descripción de la página. Menos de 150 caracteres." />
+        <meta property="twitter:image" content="https://www.website.com/RealState/media/MetaImage.png" />
+
+        <!-- ==================================================================== -->
+    </head>
+    <body>
+        <header>
+            <div class="header__wrapper">
+                <h2>Inmobiliaria</h2>
+                <div id="header__links">
+                    <ul>
+                        <li><a class="active" href="/RealState/index.html">Home</a></li>
+                        <li><a href="#">Venta</a></li>
+                        <li><a href="">Alquiler</a></li>
+                        <li><a href="">Proyectos</a></li>
+                        <li><a href="">Contacto</a></li>
+                    </ul>
+                    <a class="login" href="">Log In</a>
+                </div>
+                <div id="menuBtn">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </header>
+
+        <section class="layout">
+            <div class="layout__filters">
+                <div class="filters__header">
+                    <h2>Filtros</h2>
+
+                    <div class="buttons__container">
+                        <button>Reset</button>
+                        <button id="menuToggler"><i class="fa-solid fa-angle-down"></i></button>
+                    </div>
+                </div>
+                <div class="filters__body" id="filters__body">
+                    <div class="input">
+                        <i class="fa-solid fa-magnifying-glass icon"></i>
+                        <input type="text" placeholder="Buscar" />
+                    </div>
+
+                    <div class="input">
+                        <i class="fa-solid fa-list-ol icon"></i>
+                        <select name="">
+                            <option value="0" selected disabled>Tipo de Propiedad</option>
+                            <option value="1">Apartamento</option>
+                            <option value="2">Casa</option>
+                            <option value="3">Terrenos</option>
+                        </select>
+                    </div>
+
+                    <div class="input">
+                        <i class="fa-solid fa-location-dot icon"></i>
+                        <select name="">
+                            <option value="0" selected disabled>Localización</option>
+                            <option value="1">Canelones</option>
+                            <option value="1">Colonia</option>
+                            <option value="1">Maldonado</option>
+                            <option value="1">Montevideo</option>
+                        </select>
+                    </div>
+
+                    <div class="input">
+                        <i class="fa-solid fa-map-location-dot icon"></i>
+                        <select name="">
+                            <option value="0" selected disabled>Barrio</option>
+                            <option value="1">Aguada</option>
+                            <option value="1">Buceo</option>
+                            <option value="1">Malvín Norte</option>
+                            <option value="1">Pocitos</option>
+                        </select>
+                    </div>
+
+                    <div class="input">
+                        <h3><i class="fa-solid fa-bed"></i> Dormitorios</h3>
+                        <div class="range">
+                            <button class="selected">M</button>
+                            <button>1</button>
+                            <button>2</button>
+                            <button>3</button>
+                            <button>4 +</button>
+                        </div>
+                    </div>
+
+                    <div class="input">
+                        <h3><i class="fa-solid fa-bath"></i> Baños</h3>
+                        <div class="range">
+                            <button class="selected">1</button>
+                            <button>2</button>
+                            <button>3 +</button>
+                        </div>
+                    </div>
+
+                    <div class="input">
+                        <h3><i class="fa-solid fa-hand-holding-dollar"></i> Rango de Precios</h3>
+                        <div class="currency">
+                            <button class="selected">USD</button>
+                            <button>UYU</button>
+                        </div>
+                        <div class="price">
+                            <div class="input">
+                                <i class="fa-solid fa-arrow-down icon"></i>
+                                <input type="number" placeholder="Desde" />
+                            </div>
+                            <div class="input">
+                                <i class="fa-solid fa-arrow-up icon"></i>
+                                <input type="number" placeholder="Hasta" />
+                            </div>
+                        </div>
+                    </div>
+                    <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i> Buscar</button>
+                </div>
+            </div>
+            <div class="layout__properties">
+                <div class="property">
+                    <div class="property__image">
+                        <img class="property__image" src="/RealState/media/img/background.jpg" alt="" />
+                        <p class="property__type">Venta</p>
+                    </div>
+                    <div class="property__information">
+                        <div class="property__header">
+                            <div class="title">
+                                <h3>Rock Palace Apartments</h3>
+                                <p><i class="fa-solid fa-location-dot icon"></i> Maldonado, Punta del Este.</p>
+                            </div>
+                            <div class="price">
+                                <p>Precio de venta</p>
+                                <h3>$295,000</h3>
+                            </div>
+                        </div>
+                        <p class="property__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, et! Ducimus magni odio sint fuga...
+                        </p>
+                        <div class="property__bottom">
+                            <div class="property__characteristics">
+                                <p><i class="fa-solid fa-bed icon"></i>3 Dormitorios</p>
+                                <p><i class="fa-solid fa-kitchen-set icon"></i>1 Cocina</p>
+                                <p><i class="fa-solid fa-bath icon"></i>3 Baños</p>
+                                <p><i class="fa-solid fa-ruler-combined icon"></i>108 mts<sup>2</sup></p>
+                            </div>
+                            <div class="property__button">
+                                <button>Ver Detalles</button>
+                            </div>
+                        </div>
+                        <p class="reference__code">Ref. #40001</p>
+                    </div>
+                </div>
+
+                <div class="property">
+                    <div class="property__image">
+                        <img class="property__image" src="/RealState/media/img/Property1.jpg" alt="" />
+                        <p class="property__type">Venta</p>
+                    </div>
+                    <div class="property__information">
+                        <div class="property__header">
+                            <div class="title">
+                                <h3>Apartamento En More Buceo De 3 Dormitorios!</h3>
+                                <p><i class="fa-solid fa-location-dot icon"></i> Montevideo, Buceo.</p>
+                            </div>
+                            <div class="price">
+                                <p>Precio de venta</p>
+                                <h3>$397,580</h3>
+                            </div>
+                        </div>
+                        <p class="property__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, et! Ducimus magni odio sint fuga...
+                        </p>
+                        <div class="property__bottom">
+                            <div class="property__characteristics">
+                                <p><i class="fa-solid fa-bed icon"></i>3 Dormitorios</p>
+                                <p><i class="fa-solid fa-kitchen-set icon"></i>1 Cocina</p>
+                                <p><i class="fa-solid fa-bath icon"></i>2 Baños</p>
+                                <p><i class="fa-solid fa-ruler-combined icon"></i>150 mts<sup>2</sup></p>
+                            </div>
+                            <div class="property__button">
+                                <button>Ver Detalles</button>
+                            </div>
+                        </div>
+                        <p class="reference__code">Ref. #40003</p>
+                    </div>
+                </div>
+
+                <div class="property">
+                    <div class="property__image">
+                        <img class="property__image" src="/RealState/media/img/background.jpg" alt="" />
+                        <p class="property__type">Venta</p>
+                    </div>
+                    <div class="property__information">
+                        <div class="property__header">
+                            <div class="title">
+                                <h3>Rock Palace Apartments</h3>
+                                <p><i class="fa-solid fa-location-dot icon"></i> Maldonado, Punta del Este.</p>
+                            </div>
+                            <div class="price">
+                                <p>Precio de venta</p>
+                                <h3>$295,000</h3>
+                            </div>
+                        </div>
+                        <p class="property__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, et! Ducimus magni odio sint fuga...
+                        </p>
+                        <div class="property__bottom">
+                            <div class="property__characteristics">
+                                <p><i class="fa-solid fa-bed icon"></i>3 Dormitorios</p>
+                                <p><i class="fa-solid fa-kitchen-set icon"></i>1 Cocina</p>
+                                <p><i class="fa-solid fa-bath icon"></i>3 Baños</p>
+                                <p><i class="fa-solid fa-ruler-combined icon"></i>108 mts<sup>2</sup></p>
+                            </div>
+                            <div class="property__button">
+                                <button>Ver Detalles</button>
+                            </div>
+                        </div>
+                        <p class="reference__code">Ref. #40001</p>
+                    </div>
+                </div>
+
+                <div class="property">
+                    <div class="property__image">
+                        <img class="property__image" src="/RealState/media/img/Property1.jpg" alt="" />
+                        <p class="property__type">Venta</p>
+                    </div>
+                    <div class="property__information">
+                        <div class="property__header">
+                            <div class="title">
+                                <h3>Apartamento En More Buceo De 3 Dormitorios!</h3>
+                                <p><i class="fa-solid fa-location-dot icon"></i> Montevideo, Buceo.</p>
+                            </div>
+                            <div class="price">
+                                <p>Precio de venta</p>
+                                <h3>$397,580</h3>
+                            </div>
+                        </div>
+                        <p class="property__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, et! Ducimus magni odio sint fuga...
+                        </p>
+                        <div class="property__bottom">
+                            <div class="property__characteristics">
+                                <p><i class="fa-solid fa-bed icon"></i>3 Dormitorios</p>
+                                <p><i class="fa-solid fa-kitchen-set icon"></i>1 Cocina</p>
+                                <p><i class="fa-solid fa-bath icon"></i>2 Baños</p>
+                                <p><i class="fa-solid fa-ruler-combined icon"></i>150 mts<sup>2</sup></p>
+                            </div>
+                            <div class="property__button">
+                                <button>Ver Detalles</button>
+                            </div>
+                        </div>
+                        <p class="reference__code">Ref. #40003</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer__wrapper">
+                <div class="col">
+                    <h3 class="footer__logo">Inmobiliaria</h3>
+                    <p>Todos los derechos reservados. | © 2023</p>
+                </div>
+
+                <div class="col">
+                    <h3>Links</h3>
+                    <div class="footer__links">
+                        <p>
+                            <b><i class="fa-solid fa-chevron-right"></i></b> <a href="">Home</a>
+                        </p>
+                        <p>
+                            <b><i class="fa-solid fa-chevron-right"></i></b> <a href="">Venta</a>
+                        </p>
+                        <p>
+                            <b><i class="fa-solid fa-chevron-right"></i></b> <a href="">Alquiler</a>
+                        </p>
+                        <p>
+                            <b><i class="fa-solid fa-chevron-right"></i></b> <a href="">Proyectos</a>
+                        </p>
+                        <p>
+                            <b><i class="fa-solid fa-chevron-right"></i></b> <a href="">Contacto</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h3>Contacto</h3>
+                    <p><b>Ubicación</b>: Ciudad de la Costa, Canelones, Uruguay.</p>
+                    <p><b>Teléfono</b>: <a href="tel:+59898234717">+59898234717</a>.</p>
+                    <p><b>Email</b>: <a href="mailto:thewolfmodzyt@gmail.com">thewolfmodzyt@gmail.com</a></p>
+
+                    <h4>Seguinos en:</h4>
+                    <div class="social">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tizify">
+                <p>By</p>
+                <a href=""><img src="/RealState/media/img/tizify.svg" alt="" /></a>
+            </div>
+        </footer>
+    </body>
+</html>
