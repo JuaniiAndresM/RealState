@@ -59,12 +59,14 @@
     <body>
         <header>
             <div class="header__wrapper">
-                <h2>Inmobiliaria</h2>
+                <a href="/index.html">
+                    <h2>Inmobiliaria</h2>
+                </a>
                 <div id="header__links">
                     <ul>
-                        <li><a class="active" href="#">Home</a></li>
-                        <li><a href="/RealState/modules/venta.html">Venta</a></li>
-                        <li><a href="">Alquiler</a></li>
+                        <li><a class="active" href="/index.html">Home</a></li>
+                        <li><a href="/modules/venta.html">Venta</a></li>
+                        <li><a href="/modules/alquiler.html">Alquiler</a></li>
                         <li><a href="">Proyectos</a></li>
                         <li><a href="">Contacto</a></li>
                     </ul>
@@ -94,7 +96,7 @@
                 <div class="input">
                     <i class="fa-solid fa-list-ol icon"></i>
                     <select name="">
-                        <option value="0" selected disabled>Tipo de Propiedad</option>
+                        <option value="0" selected disabled hidden>Tipo de Propiedad</option>
                         <option value="1">Apartamento</option>
                         <option value="2">Casa</option>
                         <option value="3">Terrenos</option>
@@ -104,7 +106,7 @@
                 <div class="input">
                     <i class="fa-solid fa-location-dot icon"></i>
                     <select name="">
-                        <option value="0" selected disabled>Localización</option>
+                        <option value="0" selected disabled hidden>Localización</option>
                         <option value="1">Canelones</option>
                         <option value="1">Colonia</option>
                         <option value="1">Maldonado</option>
@@ -157,7 +159,7 @@
                                 <p><i class="fa-solid fa-ruler-combined icon"></i>108 mts<sup>2</sup></p>
                             </div>
                             <div class="property__button">
-                                <button>Ver Detalles</button>
+                                <a href="/modules/property.html">Ver Detalles</a>
                             </div>
                         </div>
                         <p class="reference__code">Ref. #40001</p>
@@ -334,7 +336,7 @@
                     </div>
                 </div>
             </div>
-            <button class="morebtn">Ver Mas <i class="fa-solid fa-arrow-right-long"></i></button>
+            <a href="/modules/venta.html" class="morebtn">Ver Mas <i class="fa-solid fa-arrow-right-long"></i></a>
         </section>
         <section class="clients">
             <h2 class="section__title">Reseñas de Clientes</h2>

@@ -6,11 +6,7 @@ window.addEventListener("load", () => {
         if (document.getElementById("menuBtn").classList.contains("active")) document.body.style.overflowY = "hidden";
         else document.body.style.overflowY = "auto";
     });
-
-    document.getElementById("menuToggler").addEventListener("click", () => {
-        document.getElementById("menuToggler").classList.toggle("active");
-        document.getElementById("filters__body").classList.toggle("active");
-    });
+    
 });
 
 const searchType = (btn) => {
